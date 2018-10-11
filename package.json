@@ -1,8 +1,13 @@
 {
-  "name": "jsStarter",
+  "name": "js_starter",
   "version": "1.0.0",
-  "scripts": {},
+  "main": "index.js",
   "author": "Robin Altena",
+  "scripts": {
+    "start:dev": "webpack-dev-server --mode development",
+    "build-dev": "webpack -d --mode development",
+    "build-prot": "webpack -d --mode production"
+  },
   "dependencies": {},
   "devDependencies": {
     "webpack": "^4.20.2",
