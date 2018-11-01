@@ -4,13 +4,15 @@
   "main": "index.js",
   "author": "Robin Altena",
   "scripts": {
-    "start:dev": "webpack-dev-server --mode development",
+    "start:dev": "webpack-dev-server --mode development --hot --content-base app",
     "build-dev": "webpack -d --mode development",
     "build-prot": "webpack -d --mode production"
   },
   "dependencies": {},
   "devDependencies": {
-    "webpack": "^4.20.2",
+    "css-loader": "^1.0.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9"
   }
