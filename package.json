@@ -9,10 +9,13 @@
     "build-prot": "webpack -d --mode production",
     "dev-server": "webpack-dev-server --mode development --hot --content-base",
     "lint": "esw webpack.config.* src --color",
-    "lint:watch": "npm run lint -- --watch"
+    "lint:watch": "npm run lint -- --watch",
+    "test": "ava",
+    "test:watch": "npm run test -- --watch"
   },
   "dependencies": {},
   "devDependencies": {
+    "ava": "1.0.0-rc.1",
     "css-loader": "^1.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-import": "^2.14.0",
